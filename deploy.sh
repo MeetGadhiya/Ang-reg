@@ -4,7 +4,7 @@ SERVICE_NAME=$1
 ARTIFACT_NAME=$2
 ENVIRONMENT=$3
 
-USER=cryton
+USER=ubuntu
 SERVICES_DIR=/opt/$USER/services
 BUILDS_DIR=/opt/$USER/builds
 TMP_BUILDS_DIR=/home/$USER/.tmp/builds
