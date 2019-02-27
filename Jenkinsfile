@@ -23,7 +23,7 @@ pipeline {
                 print "Branch name: ${env.BRANCH_NAME}"
                 sh 'node -v'
                 sh 'npm -v'
-                sh 'npm-cache install npm'
+                sh 'npm install'
             }
 
         }
