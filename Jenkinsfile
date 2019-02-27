@@ -10,10 +10,6 @@ pipeline {
         ARTIFACT_NAME = "${env.SERVICE_NAME}-${env.BRANCH_NAME}-${env.BUILD_NUMBER}"
     }
 
-    tools {
-        nodejs 'lts/carbon'
-    }
-
     parameters {
         choice(name: 'DEPLOY_ENV', choices: 'dev\ndev2\nqa\nstaging\nprod', description: 'Select the deployment environment')
         choice(name: 'PRIORITY', choices:'3\n2\n1', description: 'Select job priority')
